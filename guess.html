@@ -1,141 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game </title>
-</head>
-<body>
-    <div class="info-conatiner">
-        <div class="name">
-            Hello <span></span>
-        </div>
-        <div class="tries">
-            Wrong<span>0</span>
-        </div>
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="/styles/guess.css">
+  </head>
+  <body>
+    <div class="control-buttons">
+      <span>Start Game</span>
     </div>
-    <div class="memory-game">
-        <div class="gaem-block" data-technology="Go">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.47.29 - A clean and minimalistic logo for Go programming language. The design should feature the Go logo in its signature cyan color, with a modern and flat d.webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="Go">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.47.29 - A clean and minimalistic logo for Go programming language. The design should feature the Go logo in its signature cyan color, with a modern and flat d.webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="React">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.47.35 - A clean and minimalistic logo for React. The design should feature the React logo in its signature cyan color, with a modern and flat design. The logo.webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="React">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.47.35 - A clean and minimalistic logo for React. The design should feature the React logo in its signature cyan color, with a modern and flat design. The logo.webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="Laravel">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.47.38 - A clean and minimalistic logo for Laravel. The design should feature the Laravel logo in its signature red color, with a modern and flat design. The l.webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="Laravel">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.47.38 - A clean and minimalistic logo for Laravel. The design should feature the Laravel logo in its signature red color, with a modern and flat design. The l.webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="MySQL">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.47.41 - A clean and minimalistic logo for MySQL. The design should feature the MySQL logo in its signature blue color, with a modern and flat design. The logo.webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="MySQL">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.47.41 - A clean and minimalistic logo for MySQL. The design should feature the MySQL logo in its signature blue color, with a modern and flat design. The logo.webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="Java">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.47.43 - A clean and minimalistic logo for Java. The design should feature the Java logo in its signature red and white color, with a modern and flat design. T.webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="Java">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.47.43 - A clean and minimalistic logo for Java. The design should feature the Java logo in its signature red and white color, with a modern and flat design. T.webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="PHP">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.47.45 - A clean and minimalistic logo for PHP. The design should feature the PHP logo in its signature purple color, with a modern and flat design. The logo s.webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="PHP">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.47.45 - A clean and minimalistic logo for PHP. The design should feature the PHP logo in its signature purple color, with a modern and flat design. The logo s.webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="JavaScript">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.47.47 - A clean and minimalistic logo for JavaScript. The design should feature the JavaScript logo in its signature yellow color, with a modern and flat desi.webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="JavaScript">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.47.47 - A clean and minimalistic logo for JavaScript. The design should feature the JavaScript logo in its signature yellow color, with a modern and flat desi.webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="CSS">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.47.50 - A clean and minimalistic logo for CSS. The design should feature the CSS3 logo in its signature blue color, with a modern and flat design. The logo sh.webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="CSS">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.47.50 - A clean and minimalistic logo for CSS. The design should feature the CSS3 logo in its signature blue color, with a modern and flat design. The logo sh.webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="html">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.47.53 - A clean and minimalistic logo for HTML. The design should feature the HTML5 logo in its signature orange color, with a modern and flat design. The log.webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="html">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.47.53 - A clean and minimalistic logo for HTML. The design should feature the HTML5 logo in its signature orange color, with a modern and flat design. The log.webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="C#">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.50.04 - A clean and minimalistic logo for C#. The design should feature the C# logo in its signature dark blue color, with a modern and flat design. The logo .webp" alt="">
-            </div>
-        </div>
-        <div class="gaem-block" data-technology="C#">
-            <div class="face front"></div>
-            <div class="face back">
-                <img src="/assets/DALL·E 2024-07-27 18.50.04 - A clean and minimalistic logo for C#. The design should feature the C# logo in its signature dark blue color, with a modern and flat design. The logo .webp" alt="">
-            </div>
-        </div>
+    <div class="info-container">
+      <div class="name">
+        Hello: <span></span>
+      </div>
+      <div class="tries">
+        Wrong Tries: <span>0</span>
+      </div>
     </div>
-    
-</body>
+    <div class="memory-game-blocks">
+      <div class="game-block" data-technology="Go">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.47.29 - A clean and minimalistic logo for Go programming language. The design should feature the Go logo in its signature cyan color, with a modern and flat d.webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="Go">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.47.29 - A clean and minimalistic logo for Go programming language. The design should feature the Go logo in its signature cyan color, with a modern and flat d.webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="react">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.47.35 - A clean and minimalistic logo for React. The design should feature the React logo in its signature cyan color, with a modern and flat design. The logo.webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="react">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.47.35 - A clean and minimalistic logo for React. The design should feature the React logo in its signature cyan color, with a modern and flat design. The logo.webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="Laravel">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.47.38 - A clean and minimalistic logo for Laravel. The design should feature the Laravel logo in its signature red color, with a modern and flat design. The l.webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="Laravel">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.47.38 - A clean and minimalistic logo for Laravel. The design should feature the Laravel logo in its signature red color, with a modern and flat design. The l.webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="MySQL">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.47.41 - A clean and minimalistic logo for MySQL. The design should feature the MySQL logo in its signature blue color, with a modern and flat design. The logo.webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="MySQL">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.47.41 - A clean and minimalistic logo for MySQL. The design should feature the MySQL logo in its signature blue color, with a modern and flat design. The logo.webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="Java">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.47.43 - A clean and minimalistic logo for Java. The design should feature the Java logo in its signature red and white color, with a modern and flat design. T.webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="Java">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.47.43 - A clean and minimalistic logo for Java. The design should feature the Java logo in its signature red and white color, with a modern and flat design. T.webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="PHP">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.47.45 - A clean and minimalistic logo for PHP. The design should feature the PHP logo in its signature purple color, with a modern and flat design. The logo s.webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="PHP">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.47.45 - A clean and minimalistic logo for PHP. The design should feature the PHP logo in its signature purple color, with a modern and flat design. The logo s.webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="JavaScript">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.47.47 - A clean and minimalistic logo for JavaScript. The design should feature the JavaScript logo in its signature yellow color, with a modern and flat desi.webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="JavaScript">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.47.47 - A clean and minimalistic logo for JavaScript. The design should feature the JavaScript logo in its signature yellow color, with a modern and flat desi.webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="css">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.47.50 - A clean and minimalistic logo for CSS. The design should feature the CSS3 logo in its signature blue color, with a modern and flat design. The logo sh.webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="css">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.47.50 - A clean and minimalistic logo for CSS. The design should feature the CSS3 logo in its signature blue color, with a modern and flat design. The logo sh.webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="html">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.47.53 - A clean and minimalistic logo for HTML. The design should feature the HTML5 logo in its signature orange color, with a modern and flat design. The log.webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="html">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.47.53 - A clean and minimalistic logo for HTML. The design should feature the HTML5 logo in its signature orange color, with a modern and flat design. The log.webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="C#">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.50.04 - A clean and minimalistic logo for C#. The design should feature the C# logo in its signature dark blue color, with a modern and flat design. The logo .webp" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="C#">
+        <div class="face front"></div>
+        <div class="face back">
+          <img decoding="async" src="/assets/DALL·E 2024-07-27 18.50.04 - A clean and minimalistic logo for C#. The design should feature the C# logo in its signature dark blue color, with a modern and flat design. The logo .webp" alt="">
+        </div>
+      </div>
+    </div>
+    <audio id="success" src="audio/success.mp4" preload="auto"></audio>
+    <audio id="fail" src="audio/fail.mp4" preload="auto"></audio>
+    <script src="/scripts/guess.js"></script>
+  </body>
 </html>
